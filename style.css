@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h6 {
+color: hsla(158, 36%, 37%, 0.479); /*Dark cyan */
+
+ color: hsl(212, 21%, 14%); /*Very dark blue */
+color: hsl(228, 12%, 48%); /*Dark grayish blue*/
+color: hsl(0, 0%, 100%);/*White*/
+}
+
+
+.container {
+    display: flex;
+}
+
+.img {
+    background: url('images/image-product-desktop.jpg') no-repeat;
+    background-size: cover;
+    width: 20rem;
+    height: 28rem;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.content {
+    background-color: hsl(0, 0%, 100%);
+    width: 20rem;
+    height: 28rem;
+    padding: 1.8rem;
+    border-radius: 0 1rem 1rem 0;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+h3 {
+    opacity: 0.6;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    color: hsl(212, 21%, 14%);
+    font-size: 2.2rem;
+}
+
+p {
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+}
+
+.price {
+    font-size: 2rem;
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    position: relative;
+}
+
+.small {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+    margin-left: 1rem;
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    
+    position: absolute;
+    top: 30%;
+
+}
+
+button {
+    height: 3rem;
+    width: 16rem;
+    border: 0;
+    font: inherit;
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 0.5rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+button:active {
+    border: 0;
+    outline: none;
+}
+
+.cart {
+    margin-right: 0.5rem;
+}
+
+button:hover {
+    background-color: hsl(159, 36%, 17%);
+    cursor: pointer;
+}
+
+
+.attribution {
+    font-size: 16px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
+
+
+@media (max-width: 375px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    .img {
+    background: url('images/image-product-mobile.jpg') no-repeat;
+    background-size: contain;
+    width: 20rem;
+    height: 14rem;
+    border-radius: 1rem 1rem 0 0;
+}
+
+    .content {
+    border-radius: 0 0 1rem 1rem;
+    height: 24rem;
+
+}
+
+    h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    color: hsl(212, 21%, 14%);
+    font-size: 1.8rem;
+}
+}

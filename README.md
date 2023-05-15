@@ -1,7 +1,7 @@
 
 ![Screenshot](images/Screenshot%20(44).png)
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: https://product-preview-card-component-ak.netlify.app/
 
 ### Built with
 
